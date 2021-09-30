@@ -1,0 +1,11 @@
+th{
+    color: white;
+    background-color: rgb(73, 73, 73) !important;
+}
+.tiempo{
+    background-color: orange !important;
+    font-weight: bold;
+}
+td{
+    background-color: lightgray !important;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>EasyCancha - Gestión y arriendo de canchas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+        <img src="data:image/png;base64,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" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="canchas.html">Canchas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reservas.html">Reservas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+          <div class="container text-center">
+              <h3 class="m-5">Arriendo de canchas</h3>
+              <table class="table table-bordered">
+                <thead>
+                      <tr>
+                          <th colspan="3">Lunes</th>
+                          <th colspan="3">Martes</th>
+                          <th colspan="3">Miércoles</th>
+                          <th colspan="3">Jueves</th>
+                          <th colspan="3">Viernes</th>
+                          <th colspan="3">Sábado</th>
+                          <th colspan="3">Domingo</th>
+                      </tr>
+                      <tr>
+                          <th>14:30</th>
+                          <td>VOL</td>
+                          <td class="tiempo">60'</td>
+                          <th>14:30</th>
+                          <td>VOL</td>
+                          <td class="tiempo">60'</td>
+                          <th>14:30</th>
+                          <td>BAS</td>
+                          <td class="tiempo">60'</td>
+                          <th>14:30</th>
+                          <td>SM1</td>
+                          <td class="tiempo">45'</td>
+                          <th>14:30</th>
+                          <td>SM1</td>
+                          <td class="tiempo">45'</td>
+                          <th>14:30</th>
+                          <td></td>
+                          <td class="tiempo"></td>
+                          <th>14:30</th>
+                          <td>FUT</td>
+                          <td class="tiempo">120'</td>
+                      </tr>
+                      <tr>
+                        <th>15:30</th>
+                        <td>BAS</td>
+                        <td class="tiempo">60'</td>
+                        <th>15:30</th>
+                        <td>VOL</td>
+                        <td class="tiempo">60'</td>
+                        <th>15:30</th>
+                        <td>BAS</td>
+                        <td class="tiempo">60'</td>
+                        <th>15:30</th>
+                        <td>SM3</td>
+                        <td class="tiempo">45'</td>
+                        <th>15:30</th>
+                        <td>SM1</td>
+                        <td class="tiempo">45'</td>
+                        <th>15:30</th>
+                        <td>SM2</td>
+                        <td class="tiempo">45'</td>
+                        <th>15:30</th>
+                        <td>FUT</td>
+                        <td class="tiempo">120'</td>
+                    </tr>
+                    <tr>
+                        <th>18:30</th>
+                        <td></td>
+                        <td class="tiempo"></td>
+                        <th>18:30</th>
+                        <td>FUT</td>
+                        <td class="tiempo">120'</td>
+                        <th>18:30</th>
+                        <td>VOL</td>
+                        <td class="tiempo">60'</td>
+                        <th>18:30</th>
+                        <td>SM3</td>
+                        <td class="tiempo">45'</td>
+                        <th>18:30</th>
+                        <td></td>
+                        <td class="tiempo"></td>
+                        <th>18:30</th>
+                        <td>SM2</td>
+                        <td class="tiempo">45'</td>
+                        <th>18:30</th>
+                        <td></td>
+                        <td class="tiempo"></td>
+                    </tr>
+                  </thead>
+              </table>
+              <a href="agendar.html" class="btn btn-primary">Agendar hora</a>
+          </div>
+    </div>
+</body>
+</html>
