@@ -1,0 +1,33 @@
+#normal{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+#normal .red{
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+}
+#normal .blue{
+    width: 30px;
+    height: 30px;
+    border: 3px solid blue;
+}
+#normal .orange{
+    width: 20px;
+    height: 20px;
+    border: 3px solid orange;
+}
+#normal .green{
+    width: 10px;
+    height: 10px;
+    border: 3px solid green;
+}
+
+.miEstilo{
+    width: 100%;
+    padding: 25px;
+    background-color: darkred;
+    color: white;
+    font-size: 25px;
+}

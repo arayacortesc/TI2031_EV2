@@ -36,22 +36,29 @@
               </div>
             </div>
           </nav>
-          <div class="row">
-            <div class="col-md-6">
-              <img src="https://centribal.com/wp-content/uploads/2020/04/34.png" alt="" width="100%">
-            </div>
-            <div class="col-md-6">
-              <p style="text-align: justify; padding: 5px;">Entregamos soluciones rápidas y efectivas
-
-                Administramos todos los servicios y proveedores de TI
-                
-                Cuidamos la infraestructura TI
-                
-                Nos hacemos cargo de la seguridad de su información</p>
-                <p style="font-weight: bold;">
-                  Hoy tenemos más trabajo que nunca, pero nos gratifica saber que gracias a esto, nuestros clientes han salido adelante y pueden seguir trabajando remotamente manteniendo sus operaciones.
-                </p>
-            </div>
+          <div class="col-md-6 offset-md-3 mt-4">
+            <form action="">
+              <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Datos de la incidencia</legend>
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" class="form-control">
+                <label for="depto">Departamento:</label>
+                <select name="depto" id="depto" class="form-select">
+                  <option value="1">Informática</option>
+                  <option value="2">Marketing</option>
+                  <option value="3">Ventas</option>
+                </select>
+                <label for="desc">Descripción:</label>
+                <textarea name="desc" id="desc" cols="40" rows="3" class="form-control" placeholder="Describa la incidencia"></textarea>
+                <br>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass" id="pass" class="form-control">
+              </fieldset>
+              <fieldset class="scheduler-border text-center">
+                <legend class="scheduler-border"></legend>
+                <input class="btn btn-danger" type="reset" value="Resetear"> <input class="btn btn-success" type="submit" value="Enviar">
+              </fieldset>
+            </form>
           </div>
     </div>
 </body>
